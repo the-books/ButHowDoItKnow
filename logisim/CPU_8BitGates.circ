@@ -34,7 +34,7 @@
   </lib>
   <lib desc="#I/O" name="6"/>
   <lib desc="#BFH-Praktika" name="7"/>
-  <main name="ALU"/>
+  <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -69,21 +69,20 @@
     <tool lib="2" name="NAND Gate"/>
     <tool lib="2" name="NOR Gate"/>
   </toolbar>
-  <circuit name="ALU">
-    <a name="appearance" val="classic"/>
-    <comp loc="(320,310)" name="8 bit Shift Right"/>
-    <comp loc="(330,220)" name="8 bit Shift Left"/>
-  </circuit>
   <circuit name="8 bit Shift Right">
     <a name="appearance" val="custom"/>
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="147" y="67"/>
-      <circ-port height="10" pin="330,200" width="10" x="145" y="85"/>
-      <circ-port height="10" pin="500,190" width="10" x="145" y="65"/>
+      <circ-anchor facing="east" height="6" width="6" x="157" y="67"/>
+      <circ-port height="10" pin="330,200" width="10" x="155" y="85"/>
+      <circ-port height="10" pin="500,190" width="10" x="155" y="65"/>
       <circ-port height="8" pin="240,190" width="8" x="86" y="66"/>
       <circ-port height="8" pin="410,90" width="8" x="86" y="46"/>
-      <polygon fill="none" points="90,40 90,80 150,100 150,60" stroke="#000000"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="120" y="70">SHR</text>
+      <polygon fill="none" points="90,40 90,80 160,101 160,60" stroke="#000000"/>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="152" y="68">o</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="178" y="106">shift out</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="75" y="34">shift in</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="98" y="69">i</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="125" y="69">SHR</text>
     </appear>
     <comp lib="1" loc="(240,190)" name="Pin">
       <a name="label" val="i"/>
@@ -162,6 +161,7 @@
     <wire from="(480,190)" to="(500,190)"/>
   </circuit>
   <circuit name="8 bit Shift Left">
+    <a name="appearance" val="custom"/>
     <appear>
       <circ-anchor facing="east" height="6" width="6" x="157" y="67"/>
       <circ-port height="10" pin="330,80" width="10" x="155" y="45"/>
@@ -169,11 +169,11 @@
       <circ-port height="8" pin="240,190" width="8" x="86" y="66"/>
       <circ-port height="8" pin="410,210" width="8" x="86" y="86"/>
       <polygon fill="none" points="90,59 160,40 160,80 90,101" stroke="#000000"/>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="153" y="69">o</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="193" y="33">shift out</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="58" y="100">shift in</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="97" y="68">i</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="123" y="68">L</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="153" y="68">o</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="177" y="34">shift out</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="75" y="107">shift in</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="98" y="69">i</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="126" y="69">SHL</text>
     </appear>
     <comp lib="1" loc="(240,190)" name="Pin">
       <a name="label" val="i"/>
