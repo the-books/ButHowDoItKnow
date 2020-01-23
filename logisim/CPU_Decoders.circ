@@ -609,33 +609,33 @@
   </circuit>
   <circuit name="4x16 Decoder0">
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="257" y="67"/>
-      <circ-port height="10" pin="960,1040" width="10" x="255" y="365"/>
-      <circ-port height="10" pin="960,140" width="10" x="255" y="65"/>
-      <circ-port height="10" pin="960,200" width="10" x="255" y="85"/>
-      <circ-port height="10" pin="960,260" width="10" x="255" y="105"/>
-      <circ-port height="10" pin="960,320" width="10" x="255" y="125"/>
-      <circ-port height="10" pin="960,380" width="10" x="255" y="145"/>
-      <circ-port height="10" pin="960,440" width="10" x="255" y="165"/>
-      <circ-port height="10" pin="960,500" width="10" x="255" y="185"/>
+      <circ-anchor facing="east" height="6" width="6" x="257" y="137"/>
+      <circ-port height="10" pin="960,1040" width="10" x="255" y="285"/>
+      <circ-port height="10" pin="960,140" width="10" x="255" y="135"/>
+      <circ-port height="10" pin="960,200" width="10" x="255" y="145"/>
+      <circ-port height="10" pin="960,260" width="10" x="255" y="155"/>
+      <circ-port height="10" pin="960,320" width="10" x="255" y="165"/>
+      <circ-port height="10" pin="960,380" width="10" x="255" y="175"/>
+      <circ-port height="10" pin="960,440" width="10" x="255" y="185"/>
+      <circ-port height="10" pin="960,500" width="10" x="255" y="195"/>
       <circ-port height="10" pin="960,560" width="10" x="255" y="205"/>
-      <circ-port height="10" pin="960,620" width="10" x="255" y="225"/>
-      <circ-port height="10" pin="960,680" width="10" x="255" y="245"/>
-      <circ-port height="10" pin="960,740" width="10" x="255" y="265"/>
-      <circ-port height="10" pin="960,800" width="10" x="255" y="285"/>
-      <circ-port height="10" pin="960,860" width="10" x="255" y="305"/>
-      <circ-port height="10" pin="960,920" width="10" x="255" y="325"/>
-      <circ-port height="10" pin="960,980" width="10" x="255" y="345"/>
-      <circ-port height="8" pin="210,110" width="8" x="176" y="126"/>
-      <circ-port height="8" pin="210,40" width="8" x="176" y="306"/>
-      <circ-port height="8" pin="210,60" width="8" x="176" y="246"/>
-      <circ-port height="8" pin="210,90" width="8" x="176" y="186"/>
-      <rect fill="none" height="340" stroke="#000000" stroke-width="2" width="80" x="180" y="50"/>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="130">d</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="188">c</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="248">b</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="309">a</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="223" y="219">4X16</text>
+      <circ-port height="10" pin="960,620" width="10" x="255" y="215"/>
+      <circ-port height="10" pin="960,680" width="10" x="255" y="225"/>
+      <circ-port height="10" pin="960,740" width="10" x="255" y="235"/>
+      <circ-port height="10" pin="960,800" width="10" x="255" y="245"/>
+      <circ-port height="10" pin="960,860" width="10" x="255" y="255"/>
+      <circ-port height="10" pin="960,920" width="10" x="255" y="265"/>
+      <circ-port height="10" pin="960,980" width="10" x="255" y="275"/>
+      <circ-port height="8" pin="210,110" width="8" x="196" y="166"/>
+      <circ-port height="8" pin="210,40" width="8" x="196" y="196"/>
+      <circ-port height="8" pin="210,60" width="8" x="196" y="186"/>
+      <circ-port height="8" pin="210,90" width="8" x="196" y="176"/>
+      <rect fill="none" height="170" stroke="#000000" stroke-width="2" width="60" x="200" y="130"/>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="207" y="170">d</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="207" y="180">c</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="207" y="200">a</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="208" y="190">b</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="232" y="219">4X16</text>
     </appear>
     <comp lib="1" loc="(210,110)" name="Pin">
       <a name="label" val="d"/>
@@ -941,32 +941,32 @@
   <circuit name="4x16 Decoder1">
     <appear>
       <circ-anchor facing="east" height="6" width="6" x="257" y="367"/>
-      <circ-port height="10" pin="960,1040" width="10" x="255" y="65"/>
+      <circ-port height="10" pin="960,1040" width="10" x="255" y="215"/>
       <circ-port height="10" pin="960,140" width="10" x="255" y="365"/>
-      <circ-port height="10" pin="960,200" width="10" x="255" y="345"/>
-      <circ-port height="10" pin="960,260" width="10" x="255" y="325"/>
-      <circ-port height="10" pin="960,320" width="10" x="255" y="305"/>
-      <circ-port height="10" pin="960,380" width="10" x="255" y="285"/>
-      <circ-port height="10" pin="960,440" width="10" x="255" y="265"/>
-      <circ-port height="10" pin="960,500" width="10" x="255" y="245"/>
-      <circ-port height="10" pin="960,560" width="10" x="255" y="225"/>
-      <circ-port height="10" pin="960,620" width="10" x="255" y="205"/>
-      <circ-port height="10" pin="960,680" width="10" x="255" y="185"/>
-      <circ-port height="10" pin="960,740" width="10" x="255" y="165"/>
-      <circ-port height="10" pin="960,800" width="10" x="255" y="145"/>
-      <circ-port height="10" pin="960,860" width="10" x="255" y="125"/>
-      <circ-port height="10" pin="960,920" width="10" x="255" y="105"/>
-      <circ-port height="10" pin="960,980" width="10" x="255" y="85"/>
-      <circ-port height="8" pin="210,110" width="8" x="176" y="126"/>
-      <circ-port height="8" pin="210,40" width="8" x="176" y="306"/>
-      <circ-port height="8" pin="210,60" width="8" x="176" y="246"/>
-      <circ-port height="8" pin="210,90" width="8" x="176" y="186"/>
-      <rect fill="none" height="340" stroke="#000000" stroke-width="2" width="80" x="180" y="50"/>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="130">d</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="188">c</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="248">b</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="188" y="309">a</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="223" y="219">4X16</text>
+      <circ-port height="10" pin="960,200" width="10" x="255" y="355"/>
+      <circ-port height="10" pin="960,260" width="10" x="255" y="345"/>
+      <circ-port height="10" pin="960,320" width="10" x="255" y="335"/>
+      <circ-port height="10" pin="960,380" width="10" x="255" y="325"/>
+      <circ-port height="10" pin="960,440" width="10" x="255" y="315"/>
+      <circ-port height="10" pin="960,500" width="10" x="255" y="305"/>
+      <circ-port height="10" pin="960,560" width="10" x="255" y="295"/>
+      <circ-port height="10" pin="960,620" width="10" x="255" y="285"/>
+      <circ-port height="10" pin="960,680" width="10" x="255" y="275"/>
+      <circ-port height="10" pin="960,740" width="10" x="255" y="265"/>
+      <circ-port height="10" pin="960,800" width="10" x="255" y="255"/>
+      <circ-port height="10" pin="960,860" width="10" x="255" y="245"/>
+      <circ-port height="10" pin="960,920" width="10" x="255" y="235"/>
+      <circ-port height="10" pin="960,980" width="10" x="255" y="225"/>
+      <circ-port height="8" pin="210,110" width="8" x="196" y="246"/>
+      <circ-port height="8" pin="210,40" width="8" x="196" y="276"/>
+      <circ-port height="8" pin="210,60" width="8" x="196" y="266"/>
+      <circ-port height="8" pin="210,90" width="8" x="196" y="256"/>
+      <rect fill="none" height="170" stroke="#000000" stroke-width="2" width="60" x="200" y="210"/>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="206" y="249">d</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="206" y="260">c</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="206" y="269">b</text>
+      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="206" y="279">a</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="229" y="294">4X16</text>
     </appear>
     <comp lib="1" loc="(210,110)" name="Pin">
       <a name="label" val="d"/>
