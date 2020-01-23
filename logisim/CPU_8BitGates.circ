@@ -34,7 +34,7 @@
   </lib>
   <lib desc="#I/O" name="6"/>
   <lib desc="#BFH-Praktika" name="7"/>
-  <main name="main"/>
+  <main name="8 bit Shift Right"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -252,6 +252,13 @@
     <wire from="(480,190)" to="(500,190)"/>
   </circuit>
   <circuit name="8 bit Inverter">
+    <appear>
+      <circ-anchor facing="east" height="6" width="6" x="147" y="77"/>
+      <circ-port height="10" pin="510,230" width="10" x="145" y="75"/>
+      <circ-port height="8" pin="140,230" width="8" x="46" y="76"/>
+      <rect fill="none" height="45" stroke="#000000" stroke-width="2" width="100" x="50" y="50"/>
+      <text dominant-baseline="top" font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="55">8 bit Inverter</text>
+    </appear>
     <comp lib="1" loc="(140,230)" name="Pin">
       <a name="width" val="8"/>
     </comp>

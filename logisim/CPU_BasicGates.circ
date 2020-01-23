@@ -98,7 +98,7 @@
     <a name="appearance" val="custom"/>
     <appear>
       <circ-anchor facing="east" height="6" width="6" x="127" y="47"/>
-      <circ-port height="10" pin="520,150" width="10" x="125" y="45"/>
+      <circ-port height="10" pin="500,150" width="10" x="125" y="45"/>
       <circ-port height="8" pin="90,130" width="8" x="66" y="36"/>
       <circ-port height="8" pin="90,170" width="8" x="66" y="56"/>
       <ellipse cx="109.0" cy="50.0" fill="none" rx="21.0" ry="20.0" stroke="#000000"/>
@@ -107,7 +107,7 @@
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="80" y="39">a</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="81" y="59">b</text>
     </appear>
-    <comp lib="1" loc="(520,150)" name="Pin">
+    <comp lib="1" loc="(500,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="label" val="o"/>
       <a name="labelloc" val="east"/>
@@ -119,18 +119,22 @@
     <comp lib="1" loc="(90,170)" name="Pin">
       <a name="label" val="b"/>
     </comp>
-    <comp lib="2" loc="(260,150)" name="NAND Gate"/>
-    <comp loc="(420,150)" name="NOT"/>
-    <wire from="(260,150)" to="(360,150)"/>
-    <wire from="(420,150)" to="(520,150)"/>
-    <wire from="(90,130)" to="(200,130)"/>
-    <wire from="(90,170)" to="(200,170)"/>
+    <comp lib="2" loc="(240,150)" name="NAND Gate"/>
+    <comp lib="2" loc="(420,150)" name="NAND Gate"/>
+    <wire from="(240,150)" to="(340,150)"/>
+    <wire from="(340,130)" to="(340,150)"/>
+    <wire from="(340,130)" to="(360,130)"/>
+    <wire from="(340,150)" to="(340,170)"/>
+    <wire from="(340,170)" to="(360,170)"/>
+    <wire from="(420,150)" to="(500,150)"/>
+    <wire from="(90,130)" to="(180,130)"/>
+    <wire from="(90,170)" to="(180,170)"/>
   </circuit>
   <circuit name="OR">
-    <comp lib="1" loc="(190,170)" name="Pin">
+    <comp lib="1" loc="(130,170)" name="Pin">
       <a name="label" val="a"/>
     </comp>
-    <comp lib="1" loc="(190,230)" name="Pin">
+    <comp lib="1" loc="(130,230)" name="Pin">
       <a name="label" val="b"/>
     </comp>
     <comp lib="1" loc="(400,200)" name="Pin">
@@ -139,11 +143,19 @@
       <a name="labelloc" val="east"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="2" loc="(250,170)" name="NOT Gate"/>
-    <comp lib="2" loc="(250,230)" name="NOT Gate"/>
+    <comp lib="2" loc="(250,170)" name="NAND Gate"/>
+    <comp lib="2" loc="(250,230)" name="NAND Gate"/>
     <comp lib="2" loc="(370,200)" name="NAND Gate"/>
-    <wire from="(190,170)" to="(220,170)"/>
-    <wire from="(190,230)" to="(220,230)"/>
+    <wire from="(130,170)" to="(170,170)"/>
+    <wire from="(130,230)" to="(170,230)"/>
+    <wire from="(170,150)" to="(170,170)"/>
+    <wire from="(170,150)" to="(190,150)"/>
+    <wire from="(170,170)" to="(170,190)"/>
+    <wire from="(170,190)" to="(190,190)"/>
+    <wire from="(170,210)" to="(170,230)"/>
+    <wire from="(170,210)" to="(190,210)"/>
+    <wire from="(170,230)" to="(170,250)"/>
+    <wire from="(170,250)" to="(190,250)"/>
     <wire from="(250,170)" to="(280,170)"/>
     <wire from="(250,230)" to="(280,230)"/>
     <wire from="(280,170)" to="(280,180)"/>
@@ -153,42 +165,50 @@
     <wire from="(370,200)" to="(400,200)"/>
   </circuit>
   <circuit name="XOR">
-    <comp lib="1" loc="(150,140)" name="Pin">
+    <comp lib="1" loc="(140,130)" name="Pin">
       <a name="label" val="a"/>
     </comp>
-    <comp lib="1" loc="(150,240)" name="Pin">
+    <comp lib="1" loc="(140,250)" name="Pin">
       <a name="label" val="b"/>
     </comp>
-    <comp lib="1" loc="(490,190)" name="Pin">
+    <comp lib="1" loc="(510,190)" name="Pin">
       <a name="facing" val="west"/>
       <a name="label" val="c"/>
       <a name="labelloc" val="east"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="2" loc="(250,140)" name="NOT Gate"/>
-    <comp lib="2" loc="(250,240)" name="NOT Gate"/>
-    <comp lib="2" loc="(340,160)" name="NAND Gate"/>
-    <comp lib="2" loc="(340,220)" name="NAND Gate"/>
-    <comp lib="2" loc="(460,190)" name="NAND Gate"/>
-    <wire from="(150,140)" to="(190,140)"/>
-    <wire from="(150,240)" to="(180,240)"/>
-    <wire from="(180,180)" to="(180,240)"/>
-    <wire from="(180,180)" to="(280,180)"/>
-    <wire from="(180,240)" to="(220,240)"/>
-    <wire from="(190,140)" to="(190,200)"/>
-    <wire from="(190,140)" to="(220,140)"/>
-    <wire from="(190,200)" to="(280,200)"/>
-    <wire from="(250,140)" to="(280,140)"/>
-    <wire from="(250,240)" to="(280,240)"/>
-    <wire from="(340,160)" to="(370,160)"/>
-    <wire from="(340,220)" to="(370,220)"/>
-    <wire from="(370,160)" to="(370,170)"/>
-    <wire from="(370,170)" to="(400,170)"/>
-    <wire from="(370,210)" to="(370,220)"/>
-    <wire from="(370,210)" to="(400,210)"/>
-    <wire from="(460,190)" to="(490,190)"/>
+    <comp lib="2" loc="(290,130)" name="NAND Gate"/>
+    <comp lib="2" loc="(290,250)" name="NAND Gate"/>
+    <comp lib="2" loc="(380,150)" name="NAND Gate"/>
+    <comp lib="2" loc="(380,230)" name="NAND Gate"/>
+    <comp lib="2" loc="(480,190)" name="NAND Gate"/>
+    <wire from="(140,130)" to="(180,130)"/>
+    <wire from="(140,250)" to="(170,250)"/>
+    <wire from="(170,170)" to="(170,250)"/>
+    <wire from="(170,170)" to="(320,170)"/>
+    <wire from="(170,250)" to="(210,250)"/>
+    <wire from="(180,130)" to="(180,210)"/>
+    <wire from="(180,130)" to="(210,130)"/>
+    <wire from="(180,210)" to="(320,210)"/>
+    <wire from="(210,110)" to="(210,130)"/>
+    <wire from="(210,110)" to="(230,110)"/>
+    <wire from="(210,130)" to="(210,150)"/>
+    <wire from="(210,150)" to="(230,150)"/>
+    <wire from="(210,230)" to="(210,250)"/>
+    <wire from="(210,230)" to="(230,230)"/>
+    <wire from="(210,250)" to="(210,270)"/>
+    <wire from="(210,270)" to="(230,270)"/>
+    <wire from="(290,130)" to="(320,130)"/>
+    <wire from="(290,250)" to="(320,250)"/>
+    <wire from="(380,150)" to="(400,150)"/>
+    <wire from="(380,230)" to="(400,230)"/>
+    <wire from="(400,150)" to="(400,170)"/>
+    <wire from="(400,170)" to="(420,170)"/>
+    <wire from="(400,210)" to="(400,230)"/>
+    <wire from="(400,210)" to="(420,210)"/>
+    <wire from="(480,190)" to="(510,190)"/>
   </circuit>
-  <circuit name="3 And">
+  <circuit name="3 AND">
     <comp lib="1" loc="(200,190)" name="Pin">
       <a name="label" val="a"/>
     </comp>
