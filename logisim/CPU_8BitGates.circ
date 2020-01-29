@@ -77,12 +77,8 @@
       <circ-port height="10" pin="500,190" width="10" x="155" y="65"/>
       <circ-port height="8" pin="240,190" width="8" x="86" y="66"/>
       <circ-port height="8" pin="410,90" width="8" x="86" y="46"/>
-      <polygon fill="none" points="90,40 90,80 160,101 160,60" stroke="#000000"/>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="152" y="68">o</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="178" y="106">shift out</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="75" y="34">shift in</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="98" y="69">i</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="125" y="69">SHR</text>
+      <polygon fill="none" points="90,40 90,90 160,101 160,51" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="123" y="69">SHR</text>
     </appear>
     <comp lib="1" loc="(240,190)" name="Pin">
       <a name="label" val="i"/>
@@ -168,12 +164,8 @@
       <circ-port height="10" pin="500,190" width="10" x="155" y="65"/>
       <circ-port height="8" pin="240,190" width="8" x="86" y="66"/>
       <circ-port height="8" pin="410,210" width="8" x="86" y="86"/>
-      <polygon fill="none" points="90,59 160,40 160,80 90,101" stroke="#000000"/>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="153" y="68">o</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="end" x="177" y="34">shift out</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="75" y="107">shift in</text>
-      <text dominant-baseline="central" fill="#404040" font-family="SansSerif" font-size="10" text-anchor="start" x="98" y="69">i</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="126" y="69">SHL</text>
+      <polygon fill="none" points="90,50 160,40 160,90 90,101" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="125" y="69">SHL</text>
     </appear>
     <comp lib="1" loc="(240,190)" name="Pin">
       <a name="label" val="i"/>
@@ -253,11 +245,12 @@
   </circuit>
   <circuit name="8 bit Inverter">
     <appear>
-      <circ-anchor facing="east" height="6" width="6" x="147" y="77"/>
-      <circ-port height="10" pin="510,230" width="10" x="145" y="75"/>
-      <circ-port height="8" pin="140,230" width="8" x="46" y="76"/>
-      <rect fill="none" height="45" stroke="#000000" stroke-width="2" width="100" x="50" y="50"/>
-      <text dominant-baseline="top" font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="55">8 bit Inverter</text>
+      <circ-anchor facing="east" height="6" width="6" x="117" y="147"/>
+      <circ-port height="10" pin="510,230" width="10" x="115" y="145"/>
+      <circ-port height="8" pin="140,230" width="8" x="46" y="146"/>
+      <ellipse cx="120.5" cy="149.5" fill="#ffffff" rx="6.5" ry="6.5" stroke="#000000" stroke-width="2"/>
+      <polygon fill="none" points="50,120 50,180 120,150" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="73" y="149">NOT</text>
     </appear>
     <comp lib="1" loc="(140,230)" name="Pin">
       <a name="width" val="8"/>
@@ -354,6 +347,14 @@
     <wire from="(500,230)" to="(510,230)"/>
   </circuit>
   <circuit name="8 bit And">
+    <appear>
+      <circ-anchor facing="east" height="6" width="6" x="147" y="77"/>
+      <circ-port height="10" pin="580,170" width="10" x="145" y="75"/>
+      <circ-port height="8" pin="110,190" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="110,330" width="8" x="46" y="86"/>
+      <rect fill="none" height="55" stroke="#000000" stroke-width="2" width="100" x="50" y="50"/>
+      <text dominant-baseline="top" font-family="SansSerif" font-size="12" text-anchor="middle" x="100" y="55">8 bit And</text>
+    </appear>
     <comp lib="1" loc="(110,190)" name="Pin">
       <a name="width" val="8"/>
     </comp>
@@ -869,6 +870,16 @@
     <wire from="(500,240)" to="(570,240)"/>
   </circuit>
   <circuit name="8 bit Adder">
+    <appear>
+      <circ-anchor facing="east" height="6" width="6" x="87" y="147"/>
+      <circ-port height="10" pin="740,30" width="10" x="85" y="145"/>
+      <circ-port height="10" pin="760,450" width="10" x="115" y="165"/>
+      <circ-port height="8" pin="160,150" width="8" x="46" y="146"/>
+      <circ-port height="8" pin="160,700" width="8" x="46" y="186"/>
+      <circ-port height="8" pin="160,790" width="8" x="86" y="186"/>
+      <polygon fill="none" points="50,137 50,160 71,171 50,181 50,201 120,181 120,160" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="89" y="170">ADD</text>
+    </appear>
     <comp lib="1" loc="(160,150)" name="Pin">
       <a name="label" val="a"/>
       <a name="width" val="8"/>
